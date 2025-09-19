@@ -1,0 +1,20 @@
+{
+	"name": "n8n-nodes-discord-signature-validator",
+	"version": "1.0.0",
+	"description": "n8n community node to validate Discord ED25519 signatures",
+	"keywords": [
+		"n8n-community-node",
+		"discord",
+		"signature",
+		"ed25519"
+	],
+	"author": "Lautaro Yukelson",
+	"license": "MIT",
+	"main": "nodes/DiscordSignatureValidator/DiscordSignatureValidator.node.js",
+	"scripts": {
+		"prepublishOnly": "echo 'Ready to publish'"
+	},
+	"dependencies": {
+		"tweetnacl": "^1.0.3"
+	}
+}
