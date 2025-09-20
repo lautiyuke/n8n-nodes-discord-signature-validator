@@ -1,6 +1,6 @@
 # Discord Signature Validator for n8n
 
-This is a **community node for n8n** that validates Discord ED25519 request signatures.
+This is a **community node for n8n** that validates Discord ED25519 request signatures.  
 It is designed to work with Discord Webhooks and allows you to verify that incoming requests are authentic.
 
 ---
@@ -17,11 +17,28 @@ It is designed to work with Discord Webhooks and allows you to verify that incom
 
 1. **Install the node** via npm:
 
-```bash
-n8n-nodes install n8n-nodes-discord-signature-validator
-```
+   Access your Docker shell (if running with Docker):
 
-or copy the folder into `~/.n8n/custom/` if self-hosting.
+   ```bash
+   docker exec -it n8n sh
+   ```
+
+   Create the custom nodes folder if it doesn’t exist and navigate into it:
+
+   ```bash
+   mkdir -p ~/.n8n/nodes
+   cd ~/.n8n/nodes
+   ```
+
+   Install the node:
+
+   ```bash
+   npm install n8n-nodes-discord-signature-validator
+   ```
+
+   > 🔁 Reinicia n8n después de instalar para que detecte el nuevo nodo.
+
+   Alternatively, if you are self-hosting without Docker, you can copy this repository into `~/.n8n/custom/`.
 
 2. **Add a Webhook Node** in your workflow to receive Discord events.
 
