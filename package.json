@@ -1,20 +1,42 @@
 {
 	"name": "n8n-nodes-discord-signature-validator",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "n8n community node to validate Discord ED25519 signatures",
 	"keywords": [
-		"n8n-community-node",
+		"n8n",
+		"n8n-community-node-package",
 		"discord",
 		"signature",
-		"ed25519"
+		"ed25519",
+		"workflow",
+		"custom",
+		"nodes"
 	],
 	"author": "Lautaro Yukelson",
 	"license": "MIT",
-	"main": "nodes/DiscordSignatureValidator/DiscordSignatureValidator.node.js",
-	"scripts": {
-		"prepublishOnly": "echo 'Ready to publish'"
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/lautiyuke/n8n-nodes-discord-signature-validator.git"
 	},
+	"bugs": {
+		"url": "https://github.com/lautiyuke/n8n-nodes-discord-signature-validator/issues"
+	},
+	"homepage": "https://github.com/lautiyuke/n8n-nodes-discord-signature-validator#readme",
 	"dependencies": {
 		"tweetnacl": "^1.0.3"
+	},
+	"files": [
+		"nodes"
+	],
+	"scripts": {
+		"prepublishOnly": "echo 'Ready to publish'",
+		"release": "npm publish --access public"
+	},
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"credentials": [],
+		"nodes": [
+			"nodes/DiscordSignatureValidator/DiscordSignatureValidator.node.js"
+		]
 	}
 }
