@@ -4,7 +4,7 @@ class DiscordSignatureValidator {
 	description = {
 		displayName: 'Discord Signature Validator',
 		name: 'discordSignatureValidator',
-		icon: 'file:shield.svg',
+		icon: 'file:icon.png',
 		group: ['transform'],
 		version: 1,
 		description: 'Validates Discord ED25519 request signatures',
